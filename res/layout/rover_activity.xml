@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* Copyright 2007, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License"); 
+** you may not use this file except in compliance with the License. 
+** You may obtain a copy of the License at 
+**
+**     http://www.apache.org/licenses/LICENSE-2.0 
+**
+** Unless required by applicable law or agreed to in writing, software 
+** distributed under the License is distributed on an "AS IS" BASIS, 
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+** See the License for the specific language governing permissions and 
+** limitations under the License.
+*/
+-->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    android:stretchColumns="*" >
+
+    <TableRow
+        android:id="@+id/tableRowLabelSteer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Steer Speed (0-100%)"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_weight="1"
+            />
+        
+        </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <SeekBar
+            android:id="@+id/steerSpeedBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0" 
+            android:layout_weight="1"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/forwardButton"
+            android:layout_width="119dp"
+            android:layout_height="94dp"
+            android:text="Forward" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/leftButton"
+            android:layout_width="119dp"
+            android:layout_height="94dp"
+            android:text="Left" />
+
+        <Button
+            android:id="@+id/stopTurn"
+            android:layout_width="119dp"
+            android:layout_height="94dp"
+            android:text="Stop Turn" />
+
+        <Button
+            android:id="@+id/rightButton"
+            android:layout_width="119dp"
+            android:layout_height="94dp"
+            android:text="Right" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+        
+                <Button
+            android:id="@+id/stopButton"
+            android:layout_width="119dp"
+            android:layout_height="94dp"
+            android:text="Stop Accel." />
+        
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/reverseButton"
+            android:layout_width="119dp"
+            android:layout_height="94dp"
+            android:text="Reverse" />
+    </TableRow>
+    
+        <TableRow
+        android:id="@+id/tableRowLabelDrive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Drive Speed (0-100%)"
+                android:textAppearance="?android:attr/textAppearanceSmall" 
+                android:layout_weight="1"/>
+        
+        </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <SeekBar
+            android:id="@+id/driveSpeedBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"
+            android:layout_weight="1"
+             />
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRowInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---" />
+        
+    </TableRow>
+
+</TableLayout>
