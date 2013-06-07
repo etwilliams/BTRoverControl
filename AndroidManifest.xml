@@ -22,5 +22,5 @@
     </application>
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.BLUETOOTH" />    
-    <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="17"/>
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="15"/>
 </manifest>
